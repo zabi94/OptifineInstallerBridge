@@ -35,7 +35,7 @@ public class FileLoggerModifier extends AbstractLoggerModifier {
 		} catch (IOException e) {
 			System.err.println("Error during log redirection, not logging");
 			e.printStackTrace();
-			return new PrintStream(new VoidLogger.NullOutputStream());
+			return new PrintStream(new VoidLoggerModifier.NullOutputStream());
 		}
 	}
 

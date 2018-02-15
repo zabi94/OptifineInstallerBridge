@@ -13,7 +13,7 @@ import java.io.IOException;
 import java.io.OutputStream;
 import java.io.PrintStream;
 
-public class VoidLogger extends AbstractLoggerModifier {
+public class VoidLoggerModifier extends AbstractLoggerModifier {
 
 	@Override
 	public PrintStream createNewStream() {

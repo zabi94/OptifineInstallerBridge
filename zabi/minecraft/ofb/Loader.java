@@ -17,7 +17,7 @@ import java.net.URLClassLoader;
 import zabi.minecraft.ofb.loggers.AbstractLoggerModifier;
 import zabi.minecraft.ofb.loggers.FileLoggerModifier;
 import zabi.minecraft.ofb.loggers.NormalLoggerModifier;
-import zabi.minecraft.ofb.loggers.VoidLogger;
+import zabi.minecraft.ofb.loggers.VoidLoggerModifier;
 
 public class Loader {
 
@@ -40,7 +40,7 @@ public class Loader {
 		AbstractLoggerModifier log_modifier = new FileLoggerModifier();
 		
 		if (args.length>1){
-			if (args[1].toLowerCase().equals("-log=none")) log_modifier=new VoidLogger();
+			if (args[1].toLowerCase().equals("-log=none")) log_modifier=new VoidLoggerModifier();
 			else if (args[1].toLowerCase().equals("-log=console")) log_modifier=new NormalLoggerModifier();
 		}
 		log_modifier.engage();
