@@ -8,7 +8,7 @@ This was originally designed to allow the installation of optifine in vanilla in
 ### How to
 
 Place the optifine jar in the "ofb" subdirectory of the directory you are going to call this from.  
-Then call this with the command `java -jar [jar_name] [minecraft_instances_directory]`.  
+Then call this with the command `java -jar <jar_name> <minecraft_instances_directory> [logger_options]`.  
 
 ### Notes
 
